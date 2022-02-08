@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 70%;
+    margin: auto;
+    height: 100vh;
+}
+
+/* =========== NAVBAR ============ */
+
+header{
+    display: flex;
+    padding: 20px 15px;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.nav-list{
+    display: flex;
+    gap: 3rem;
+}
+
+.logo{
+    color: rgb(19, 19, 19);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.logo span{
+    color: rgb(0, 240, 0);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(19, 19, 19);
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-weight: 400;
+}
+
+.icons-right{
+    display: flex;
+    gap: 15px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.menu-burger{
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* ========== EFEITO HOVER, AFTER NAVBAR E MEDIA QUERIES ========== */
+
+.nav-list li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(19, 19, 19);
+    display: block;
+    transition: 0.8s;
+    border-radius: 10px;
+}
+
+.nav-list li a:hover::after{
+    width: 100%;
+}
+
+@media(max-width: 1200px){
+    .nav-list{
+        display: none;
+    }
+
+    .menu-burger{
+        font-size: 2.5rem;
+        cursor: pointer;
+        display: block;
+    }
+}
+
+@media(max-width: 600px){
+    .logo{
+        font-size: 1.5rem;
+        line-height: 20px;
+    }
+}
+
+/* =============================================== */
+
+.inpt-search{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px 13px;
+}
+
+.inpt-search input{
+    width: 40%;
+    height: 50px;
+    border-radius: 10px 0 0 0;
+    outline: none;
+    padding: 0px 15px;
+    border: 3px solid #3333;
+}
+
+::-webkit-input-placeholder{
+    font-family: 'Poppins', sans-serif;
+}
