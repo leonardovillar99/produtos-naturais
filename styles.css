@@ -56,10 +56,11 @@ header{
     color: rgb(19, 19, 19);
     font-size: 1.8rem;
     cursor: pointer;
+    font-weight: 500;
 }
 
 .logo span{
-    color: rgb(0, 240, 0);
+    color: rgb(14, 184, 14);
 }
 
 a{
@@ -79,11 +80,24 @@ a{
     gap: 15px;
 }
 
-.icon{
+.icons-right .icon{
     display: flex;
     align-items: center;
     font-size: 25px;
     cursor: pointer;
+}
+
+.cart-circle{
+    position: absolute;
+    margin-left: 67px;
+    margin-top: 3px; 
+}
+
+.cart-circle span{
+    background: rgb(9, 145, 9);
+    border-radius: 50%;
+    padding: 2px 8px;
+    color: #FFF;
 }
 
 .menu-burger{
@@ -367,3 +381,342 @@ footer{
     align-items: center;
     height: 50px;
 }
+
+/* ============ LOGIN PAGE ============ */
+
+.container-login-page{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.login-form{
+    width: 700px;
+    height: 700px;
+    border: 1px solid rgb(218, 218, 218);
+    margin-top: 90px;
+}
+
+.login-form h1{
+    margin-top: 15px;
+    text-align: center;
+    color: rgb(14, 184, 14);
+    font-size: 1.8rem;
+}
+
+.login-form form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.login-form input{
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    padding: 0px 16px;
+}
+
+.login-btn{
+    width: 500px;
+    border-radius: 5px;
+    height: 50px;
+    cursor: pointer;
+    background: rgb(9, 145, 9);
+    color: #FFF;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border: transparent;
+    margin-top: 40px;
+    transition: .5s;
+}
+
+.login-btn:hover{
+    background: rgb(14, 184, 14);
+}
+
+.forgot-password-login{
+    display: flex;
+    column-gap: 40px;
+    padding: 15px 0;
+}
+
+.forgot-password-login a{
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: 500;
+    color: rgb(129, 129, 129);
+}
+
+.divisor{
+    width: 70%;
+    height: 2px;
+    background: rgb(199, 199, 199);
+    margin-top: 10px;
+}
+
+.access-social-medias{
+    margin-top: 40px;
+}
+
+.access-social-medias h2{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(119, 119, 119);
+}
+
+.icons-access{
+    display: flex;
+    column-gap: 10px;
+    margin-top: 30px;
+}
+
+.icons-access .icon{
+    font-size: 2.3rem;
+    cursor: pointer;
+    color: #2f6aeb;
+    margin-left: 10px;
+}
+
+.facebook{
+    display: flex;
+    align-items: center;
+    width: 230px;
+    height: 50px;
+    border: 1px solid #2f6aeb;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #2f6aeb;
+}
+
+.facebook span{
+    font-weight: 600;
+}
+
+.icons-access .icon-google{
+    color: rgb(14, 184, 14);
+}
+
+.google{
+    display: flex;
+    align-items: center;
+    width: 230px;
+    height: 50px;
+    border: 1px solid rgb(14, 184, 14);
+    border-radius: 5px;
+    color: rgb(14, 184, 14);
+    cursor: pointer;
+}
+
+.google span{
+    font-weight: 600;
+}
+
+.register-form{
+    width: 700px;
+    height: 700px;
+    border: 1px solid rgb(218, 218, 218);
+    margin-top: 90px;
+}
+
+.register-form h1{
+    margin-top: 15px;
+    text-align: center;
+    color: rgb(14, 184, 14);
+    font-size: 1.8rem;
+}
+
+.register-form form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.register-form input{
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    padding: 0px 16px;
+}
+
+.register-btn{
+    width: 500px;
+    border-radius: 5px;
+    height: 50px;
+    cursor: pointer;
+    background: transparent;
+    color: #000;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border: 1px solid #333;
+    margin-top: 40px;
+    transition: .5s;
+}
+
+.register-btn:hover{
+    background: rgb(9, 145, 9);
+    border: transparent;
+    color: #FFF;
+}
+
+@media(max-width: 1700px){
+    .container-login-page{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+@media(max-width: 765px){
+    .container-login-page{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .login-form{
+        width: 550px;
+        height: 700px;
+        border: 1px solid rgb(218, 218, 218);
+        margin-top: 90px;
+    }
+
+    .register-form{
+        width: 550px;
+        height: 700px;
+        border: 1px solid rgb(218, 218, 218);
+        margin-top: 90px;
+    }
+}
+
+@media (max-width: 590px){
+
+    .login-form{
+        width: 300px;
+        height: 730px;
+        border: 1px solid rgb(218, 218, 218);
+        margin-top: 90px;
+    }
+
+    .register-form{
+        width: 550px;
+        height: 700px;
+        border: 1px solid rgb(218, 218, 218);
+        margin-top: 90px;
+    }
+
+    .login-form input{
+        width: 270px;
+        height: 50px;
+        border-radius: 5px;
+        outline: none;
+        padding: 0px 16px;
+    }
+
+    .login-btn{
+        width: 270px;
+        border-radius: 5px;
+        height: 50px;
+        cursor: pointer;
+        background: rgb(9, 145, 9);
+        color: #FFF;
+        font-size: 1.3rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        border: transparent;
+        margin-top: 40px;
+        transition: .5s;
+    }
+    
+    .login-btn:hover{
+        background: rgb(14, 184, 14);
+    }
+
+    .forgot-password-login{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 0;
+    }
+    
+    .forgot-password-login a{
+        text-transform: uppercase;
+        text-decoration: underline;
+        font-weight: 500;
+        color: rgb(129, 129, 129);
+        text-align: center;
+        font-size: .9rem;
+    }
+
+    .access-social-medias{
+        margin-top: 10px;
+    }
+
+    .access-social-medias h2{
+        display: none;
+    }
+
+    .icons-access{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .register-form{
+        width: 300px;
+        height: 700px;
+        border: 1px solid rgb(218, 218, 218);
+        margin-top: 90px;
+    }
+
+    .register-form input{
+        width: 270px;
+        height: 50px;
+        border-radius: 5px;
+        outline: none;
+        padding: 0px 16px;
+    }
+
+    .register-btn{
+        width: 270px;
+        border-radius: 5px;
+        height: 50px;
+        cursor: pointer;
+        background: transparent;
+        color: #000;
+        font-size: 1.3rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        border: 1px solid #333;
+        margin-top: 40px;
+        transition: .5s;
+    }
+    
+    .register-btn:hover{
+        background: rgb(9, 145, 9);
+        border: transparent;
+        color: #FFF;
+    }
+} 
